@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import "../../assets/scss/components/_variables";
+
+.visual {
+  position:relative;
+  min-height:100vh;
+  &__title {
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:48px;
+    z-index:1;
+    sup {
+      font-size:26px;
+      font-weight:400;
+    }
+  }
+  &__video {
+    position:absolute;
+    width:100%;
+    height:100%;
+    video {
+      display:block;
+      min-width:100%;
+      min-height:100%;
+      object-fit:cover;
+    }
+  }
+}
+
+.subvisual {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  height:100vh;
+}
+.subvisual .inner {
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  flex-direction:row;
+  flex-wrap:wrap;
+  position:relative;
+  min-width:1120px;
+  max-width:1120px;
+  margin:0 auto;
+}
+
+.solution {
+  background:url(../../assets/images/@bg_main1.jpg) no-repeat;
+  &__title {
+    flex-basis:50%;
+    color:#222;
+    font-size:38px;
+    line-height:58px;
+    sup {
+      display:block;
+      font-size:24px;
+      line-height:34px;
+    }
+  }
+
+  &__intro {
+    position:relative;
+    top:0;
+    right:0;
+    flex-basis:50%;
+    img {
+      display:block;
+      max-width:100%;
+    }
+    figcaption {
+      display:block;
+      margin-top:14px;
+      font-size:16px;
+      line-height:24px;
+    }
+    &-link {
+      display:block;
+      position:relative;
+      font-size:15px;
+      font-weight:700;
+      text-align:right;
+    }
+  }
+
+  &__business {
+    flex-basis:100%;
+    margin-top:50px;
+    h2 {
+      font-size:26px;
+    }
+    .business__list {
+      display:flex;
+      align-items:flex-start;
+      justify-content:flex-end;
+      margin-top:18px;
+      a {
+        width:calc(100% / 8);
+        font-size:16px;
+        text-align:center;
+        &:before {
+          display:block;
+          width:100px;
+          height:100px;
+          margin:0 auto;
+          content:'';
+        }
+      }
+    }
+  }
+}
+
+.service {
+  background:url(../../assets/images/@bg_service.jpeg) no-repeat;
+  background-size:cover;
+  .slick-slider {
+    width:100%;
+    color:#fff;
+  }
+  &__info {
+    display:flex !important;
+    justify-content:center;
+    align-items:flex-start;
+    img {
+      display:block;
+      width:50%;
+      border-radius:10px;
+    }
+    .box {
+      margin:80px 0 0 -30px;
+    }
+    .animation-txt {
+      display:block;
+      overflow:hidden;
+    }
+    .title {
+      display:block;
+      transform:translateY(100%);
+      font-size:60px;
+      transition:1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition-delay:.5s;
+    }
+    .desc {
+      display:block;
+      transform:translateY(100%);
+      margin:50px 0 0 90px;
+      font-size:18px;
+      word-break:keep-all;
+      transition:1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition-delay:1s;
+    }
+  }
+  .slick-active.slick-current .title,
+  .slick-active.slick-current .desc {
+    transform:translateY(0);
+  }
+  .box-progressbar {
+    position:absolute;
+    bottom:50px;
+    left:55.6%;
+    width:44%;
+  }
+  .progressbar {
+    display:block;
+    width:0;
+    height:3px;
+    background-color:#fff;
+    &.animation {
+      animation: progressbar 5s;
+      width:100%;
+    }
+  }
+  @keyframes progressbar {
+    0% {width:0;}
+    100% {width:100%;}
+  }
+}
+
+.recruit {
+  background:url(../../assets/images/@bg_recruit.jpeg) no-repeat;
+  background-size:cover;
+  &__title {
+    flex-basis:100%;
+    margin-bottom:100px;
+    font-size:48px;
+  }
+  &__list {
+    flex-basis:60%;
+    table-layout:fixed;
+    border-top:2px solid #222;
+    td {
+      padding:14px 20px;
+      border-bottom:1px solid #222;
+      text-align:center;
+      &:last-child {
+        text-align:left;
+      }
+    }
+    .date {
+      display:block;
+      font-size:48px;
+    }
+    .tag {
+      display:inline-block;
+      padding:0 10px;
+      border-radius:25px;
+      color:#fff;
+      &__red {
+        background-color:$point-color;
+      }
+      &__gray {
+        background-color:#ddd;
+      }
+    }
+  }
+  &__service {
+    flex-basis:40%;
+    padding-left:40px;
+    box-sizing:border-box;
+    >a {
+      display:block;
+      overflow:hidden;
+      position:relative;
+      height:200px;
+      padding:50px 40px;
+      box-sizing:border-box;
+      color:#fff;
+      .box {
+        overflow:hidden;
+      }
+      dt {
+        margin-bottom:10px;
+        font-size:24px;
+        font-weight:700;
+      }
+      &:after {
+        position:absolute;
+        top:50%;
+        right:40px;
+        width:72px;
+        height:72px;
+        margin-top:-36px;
+        transition:all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        content:'';
+      }
+      &:hover:after {
+        transform:scale(1.2);
+      }
+      .txt-more {
+        display:block;
+        overflow:hidden;
+        position:absolute;
+        bottom:30px;
+        left:40px;
+        em {
+          display:block;
+          transform:translateY(100%);
+          transition:all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+          font-weight:700;
+        }
+      }
+      &:hover .txt-more em {
+        transform:translateY(0);
+      }
+    }
+    &-HR {
+      background-color:$main-color;
+      &:after {
+        background:url(https://www.hanmifc.co.kr/images/pc/main/img_reward.png) no-repeat;
+      }
+    }
+    &-CA {
+      margin-top:20px;
+      background-color:$point-color;
+      &:after {
+        background:url(https://www.hanmifc.co.kr/images/pc/main/img_recruit.png) no-repeat center;
+      }
+    }
+  }
+}

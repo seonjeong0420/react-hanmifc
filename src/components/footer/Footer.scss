@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import "../../assets/scss/components/_variables";
+
+.footer {
+  background:$main-color;
+  .inner {
+    position:relative;
+    max-width:1200px;
+    margin:0 auto;
+  }
+  &__link {
+    border-bottom:1px solid #1d1e28;
+    >a {
+      display:inline-block;
+      margin-right:50px;
+      color:#fff;
+      line-height:76px;
+    }
+  }
+  &__info {
+    padding:40px 0;
+    border-top:1px solid #454755;
+    >* {
+      color:rgba(255,255,255,.2);
+    }
+    img {
+      display:block;
+      margin-bottom:40px;
+    }
+  }
+  &__link-contact {
+    position:absolute;
+    top:138px;
+    right:20px;
+    width:260px;
+    padding:0 20px;
+    box-sizing:border-box;
+    color:#fff;
+    line-height:40px;
+    &:after {
+      position:absolute;
+      top:50%;
+      right:20px;
+      width:8px;
+      height:8px;
+      margin-top:-4px;
+      border-top:1px solid #fff;
+      border-right:1px solid #fff;
+      transform:rotate(45deg);
+      content:'';
+    }
+  }
+  &__familysite {
+    position:absolute;
+    top:16px;
+    right:20px;
+    width:260px;
+    line-height:50px;
+    button {
+      display:block;
+      width:100%;
+      padding:0 20px;
+      box-sizing:border-box;
+      color:#fff;
+      line-height:50px;
+      text-align:left;
+      &:after {
+        position:absolute;
+        top:50%;
+        right:20px;
+        width:8px;
+        height:8px;
+        margin-top:-4px;
+        border-top:1px solid #fff;
+        border-right:1px solid #fff;
+        transform:rotate(-45deg);
+        transition:transform .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+        content:'';
+      }
+    }
+    nav {
+      display:none;
+      position:absolute;
+      bottom:50px;
+      left:0;
+      right:0;
+      background-color:#fff;
+      border:1px solid $main-color;
+      border-bottom:0;
+      box-sizing:border-box;
+      >a {
+        display:block;
+        padding:0 20px;
+        &:hover {
+          background-color:$main-color;
+          color:#fff;
+        }
+      }
+    }
+    &.active button {
+      border:1px solid $main-color;
+      border-top:0;
+      background-color:#fff;
+      color:$main-color;
+      font-weight:700;
+      &:after {
+        margin-top:-6px;
+        border-color:$main-color;
+        transform:rotate(135deg);
+      }
+    }
+    &.active nav {
+      display:block;
+    }
+  }
+}
