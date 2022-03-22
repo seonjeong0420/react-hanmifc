@@ -1,13 +1,13 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
 import ReactPlayer from 'react-player';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import './Main.scss';
 import 'aos/dist/aos.css';
-import "slick-carousel/slick/slick.css";
+import 'slick-carousel/slick/slick.css';
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
@@ -28,9 +28,9 @@ const Main = () => {
       sliderRef.current.slickGoTo(0);
     }
     if(i > 0) {
-      document.querySelector(".App").classList.add("down");
+      document.querySelector('.App').classList.add('down');
     } else {
-      document.querySelector(".App").classList.remove("down");
+      document.querySelector('.App').classList.remove('down');
     }
 
     scrollTween = gsap.to(window, {
@@ -50,8 +50,8 @@ const Main = () => {
     sectionRefs.current.forEach((el, index) => {
       ScrollTrigger.create({
         trigger: el,
-        start: "top bottom",
-        end: "+=200%",
+        start: 'top bottom',
+        end: '+=200%',
         onToggle: function(self) {
           return self.isActive && !scrollTween && goToSection(index, el);
         }
@@ -69,10 +69,10 @@ const Main = () => {
     slidesToScroll: 1,
     fade: true,
     afterChange: () => {
-      document.querySelector(".progressbar").classList.add("animation");
+      document.querySelector('.progressbar').classList.add('animation');
     },
     beforeChange: () => {
-      document.querySelector(".progressbar").classList.remove("animation");
+      document.querySelector('.progressbar').classList.remove('animation');
     }
   }
 

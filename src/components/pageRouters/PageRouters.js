@@ -3,6 +3,7 @@ import { Routes,Route,useLocation } from 'react-router-dom';
 import Main from '../../pages/main/Main';
 import About from '../../pages/about/About';
 import Product from '../../pages/product/Product';
+
 const PageRouters = () => {
   const { pathname } = useLocation();
   useEffect(() => {

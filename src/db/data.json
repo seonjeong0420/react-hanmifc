@@ -1,0 +1,34 @@
+{
+  "menus": [
+    {
+      "id" : "menu1",
+      "type" : "회사소개",
+      "url" : "/about/ceo"
+    },
+    {
+      "id" : "menu2",
+      "type" : "사업 및 제품",
+      "url" : "/product/research"
+    },
+    {
+      "id" : "menu3",
+      "type" : "연구개발",
+      "url" : "/develop/rnd"
+    },
+    {
+      "id" : "menu4",
+      "type" : "품질&시설",
+      "url" : "/quality/policy"
+    },
+    {
+      "id" : "menu5",
+      "type" : "인재채용",
+      "url" : "/recruit/personal"
+    },
+    {
+      "id" : "menu6",
+      "type" : "소식&공고",
+      "url" : "/notice/list"
+    }
+  ]
+}

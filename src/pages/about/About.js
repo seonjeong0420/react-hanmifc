@@ -1,5 +1,5 @@
 import { Routes,Route } from 'react-router-dom';
-import "./About.scss";
+import './About.scss';
 import Banner from '../../components/banner/Banner';
 import Ceo from './Ceo';
 

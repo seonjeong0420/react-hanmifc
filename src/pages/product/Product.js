@@ -1,6 +1,6 @@
 import { Routes,Route } from 'react-router-dom';
 import Banner from '../../components/banner/Banner';
-import Research from "./Research";
+import Research from './Research';
 
 const Product = () => {
   return (
