@@ -1,7 +1,7 @@
 import './Banner.scss';
 
 const Banner = (props) => {
-  const imgUrl = "../../../assets/images/"+props.img;
+  const imgUrl = "/assets/images/"+props.img;
 
   return (
     <>

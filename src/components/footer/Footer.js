@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.scss';
+import logo from '../../assets/images/logo_footer.png';
 
 export default function Footer() {
-
   const [isShow, setIsShow] = useState(false);
   const showClick = () => {
     setIsShow(!isShow);
   }
-
 
   return (
     <footer className="footer">
@@ -22,7 +21,7 @@ export default function Footer() {
           <Link to="/Notice" rel="noopenner noreferrer">소식&amp;공고</Link>
         </nav>
         <div className="footer__info">
-          <img src="/assets/images/logo_footer.png" alt="한미정밀화학 로고" />
+          <img src={logo} alt="한미정밀화학 로고" />
           <address>경기도 시흥시 경제로 57(정왕동) 전화 <b>031-499-2541</b> 팩스 <b>031-499-2540</b></address>
           <p>&copy;HANMI FINE CHEMICAL CORPORATION. ALL RIGHT RESERVED</p>
         </div>

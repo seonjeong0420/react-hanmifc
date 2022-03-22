@@ -8,6 +8,7 @@ import Content5 from './Content5';
 import Content6 from './Content6';
 import Content7 from './Content7';
 import 'slick-carousel/slick/slick.css';
+import '../../assets/scss/components/layout/_slider.scss';
 import './Product.scss';
 
 const Research = () => {
@@ -35,7 +36,7 @@ const Research = () => {
   }
 
   return (
-    <div className="research">
+    <section className="research">
       <h2 className="subsection__title">연구사업분야</h2>
       <p className="subsection__desc">세파 / 일반의약품 / 개량신약 / CDMO / Peptide & PEG</p>
 
@@ -49,7 +50,7 @@ const Research = () => {
       <div>
         {tab[activeTab]}
       </div>
-    </div>
+    </section>
   )
 }
 

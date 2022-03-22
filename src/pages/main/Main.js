@@ -8,6 +8,7 @@ import AOS from 'aos';
 import './Main.scss';
 import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
+import imgCompany from '../../assets/images/img_solution.jpeg';
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
@@ -102,7 +103,7 @@ const Main = () => {
           <div className="solution__intro" data-aos="fade-left" data-aos-duration="1000">
             <h2 className="blind">회사소개로 이동</h2>
             <figure>
-              <img src="assets/images/img_solution.jpeg" alt="회사 이미지" />
+              <img src={imgCompany} alt="회사 이미지" />
               <figcaption>
                 <p>한미정밀화학은 인류의 더 나은 건강을 위해서 연구개발에 힘쓰며 전세계로 원료의약품 수출하는 대한민국 제약회사입니다.</p>
                 <a href="#none" className="solution__intro-link">MORE +</a>

@@ -1,14 +1,14 @@
 import { Routes,Route } from 'react-router-dom';
 import Banner from '../../components/banner/Banner';
-import Research from './Research';
+import Policy from './Policy';
 
 const Product = () => {
   return (
     <>
-      <Banner title="최고 품질의 CMO서비스를" desc="제공하는 글로벌 원료의약품 기업" img="bg_bnr_product.jpeg" />
+      <Banner title="안전과 건강을 위해" desc="최고의 품질을 고집하는 기업" img="bg_bnr_quality.jpeg" />
       <div className="subsection">
         <Routes>
-          <Route path="research" element={<Research />} />
+          <Route path="policy" element={<Policy />} />
         </Routes>
       </div>
     </>

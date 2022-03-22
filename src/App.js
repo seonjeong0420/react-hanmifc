@@ -1,6 +1,5 @@
 import './assets/scss/reset.scss';
 import './assets/scss/components/_common.scss';
-import './assets/scss/components/pages/_layout.scss';
 import { BrowserRouter } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
 import Footer from './components/footer/Footer';

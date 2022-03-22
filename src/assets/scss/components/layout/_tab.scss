@@ -1,0 +1,32 @@
+.com-tab {
+  position:relative;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  margin-bottom:60px;
+  border-bottom:1px solid #222;
+  box-sizing:border-box;
+  .tab {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    flex-basis:280px;
+    font-size:16px;
+    line-height:80px;
+    &.active {
+      border:1px solid #222;
+      border-bottom:0;
+      font-weight:700;
+      &:after {
+        position:absolute;
+        bottom:-1px;
+        left:0;
+        right:0;
+        height:1px;
+        background-color:#fff;
+        content:'';
+      }
+    }
+  }
+}
