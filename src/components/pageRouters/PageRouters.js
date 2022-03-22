@@ -5,6 +5,7 @@ import About from '../../pages/about/About';
 import Product from '../../pages/product/Product';
 import Develop from '../../pages/develop/Develop';
 import Quality from '../../pages/quality/Quality';
+import Recruit from '../../pages/recruit/Recruit';
 
 
 const PageRouters = () => {
@@ -20,6 +21,7 @@ const PageRouters = () => {
       <Route path="product/*" element={<Product />} />
       <Route path="develop/*" element={<Develop />} />
       <Route path="quality/*" element={<Quality />} />
+      <Route path="recruit/*" element={<Recruit />} />
     </Routes>
   )
 }
