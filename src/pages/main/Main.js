@@ -8,7 +8,7 @@ import AOS from 'aos';
 import './Main.scss';
 import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
-import imgCompany from '../../assets/images/img_solution.jpeg';
+import imgCompany from '../../assets/images/main/img_solution.jpg';
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 

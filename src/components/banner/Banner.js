@@ -7,7 +7,7 @@ const Banner = (props) => {
     <>
       <div className="com-bnr" style={{
         backgroundImage:`url(${imgUrl})`
-        }}>
+      }}>
         <div className="com-bnr__inner">
           <strong className="com-bnr__title">{props.title}</strong>
           <p className="com-bnr__desc">{props.desc}</p>

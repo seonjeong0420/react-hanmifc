@@ -7,26 +7,26 @@
     align-items:flex-start;
     flex-wrap:wrap;
     flex-direction:column;
-    width:1120px;
-    height:800px;
-    margin-top:45px;
-    padding:0 62px;
-    background:url(/assets/images/bg_vision.jpeg) no-repeat;
+    width:112rem;
+    height:80rem;
+    margin-top:4.5rem;
+    padding:0 6.2rem;
+    background:url(/assets/images/rnd/bg_vision.jpg) no-repeat;
     box-sizing:border-box;
     color:#fff;
-    font-size:18px;
+    font-size:1.8rem;
     dt {
-      font-size:48px;
+      font-size:4.8rem;
     }
     dd {
-      margin-top:10px;
-      font-size:24px;
+      margin-top:1rem;
+      font-size:2.4rem;
     }
   }
   &__desc {
-    max-width:650px;
-    margin-top:20px;
-    padding:24px 0 0 34px;
+    max-width:65rem;
+    margin-top:2rem;
+    padding:2.4rem 0 0 3.4rem;
     word-break:keep-all;
     line-height:1.5;
   }

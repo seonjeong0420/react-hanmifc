@@ -12,7 +12,7 @@
   @at-root {
     .App.down .navbar {
       background-color:#fff;
-      box-shadow:0 4px 8px 0 rgba(0,0,0,.1);
+      box-shadow:0 .4rem .8rem 0 rgba(0,0,0,.1);
       .navbar__logo a {
         background-image:url(https://www.hanmifc.co.kr/images/pc/common/logo_on.png);
       }
@@ -23,7 +23,7 @@
   }
   &.hover,&.active {
     background-color:#fff;
-    box-shadow:0 4px 8px 0 rgba(0,0,0,.1);
+    box-shadow:0 .4rem .8rem 0 rgba(0,0,0,.1);
     .navbar__logo a {
       background-image:url(https://www.hanmifc.co.kr/images/pc/common/logo_on.png);
     }
@@ -35,15 +35,15 @@
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    max-width:1140px;
-    height:82px;
+    max-width:114rem;
+    height:8.2rem;
     margin:0 auto;
   }
   &__logo {
-    width:170px;
+    width:17rem;
     >a {
       display:block;
-      height:24px;
+      height:2.4rem;
       background:url(https://www.hanmifc.co.kr/images/pc/common/logo_on.png) no-repeat;
       text-indent:100%;
       white-space:nowrap;
@@ -56,25 +56,25 @@
     flex:1;
   }
   &__item {
-    padding:0 30px;
+    padding:0 3rem;
     &>a {
       display:block;
       position:relative;
-      padding:30px 0;
+      padding:3rem 0;
       color:$main-color;
-      font-size:18px;
-      &:after {
+      font-size:1.8rem;
+      &:after,&.active:after {
         position:absolute;
         bottom:0;
         left:0;
         right:0;
         width:0;
-        height:2px;
+        height:.2rem;
         background-color:$point-color;
         transition:width .2s;
         content:'';
       }
-      &:hover:after {
+      &:hover:after,&.active:after {
         width:100%;
       }
     }

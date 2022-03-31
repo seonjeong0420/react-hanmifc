@@ -1,19 +1,19 @@
 .com-slider {
   .slick-list {
-    border-left:1px solid #ccc;
-    border-right:1px solid #ccc;
+    border-left:.1rem solid #ccc;
+    border-right:.1rem solid #ccc;
   }
   .slick-slide {
-    height:200px;
+    height:20rem;
     background-color:transparent;
-    border:1px solid #ccc;
+    border:.1rem solid #ccc;
     border-left:0;
     box-sizing:border-box;
     text-align:center;
     vertical-align:top;
-    
+
     .active {
-      border:1px solid #303242;
+      border:.1rem solid #303242;
       background-color:#303242;
       color:#fff;
     }
@@ -22,11 +22,11 @@
     overflow:hidden;
     position:absolute;
     top:50%;
-    width:40px;
-    height:40px;
-    margin-top:-20px;
+    width:4rem;
+    height:4rem;
+    margin-top:-2rem;
     background-color:#fff;
-    border:1px solid #ccc;
+    border:.1rem solid #ccc;
     white-space:nowrap;
     text-indent:100%;
     z-index:1;
@@ -37,20 +37,20 @@
       position:absolute;
       top:50%;
       left:50%;
-      width:17px;
-      height:14px;
-      margin:-7px 0 0 -8px;
+      width:1.7rem;
+      height:1.4rem;
+      margin:-.7rem 0 0 -.8rem;
       background:url(../../../images/icon_arrow.png) no-repeat 0 0;
       content:'';
     }
     &.slick-prev {
-      left:-15px;
+      left:-1.5rem;
       &:before {
         transform:rotate(180deg);
       }
     }
     &.slick-next {
-      right:-15px;
+      right:-1.5rem;
     }
   }
 }

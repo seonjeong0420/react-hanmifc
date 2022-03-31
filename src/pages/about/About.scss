@@ -2,27 +2,27 @@
 
 .ceo {
   position:relative;
-  padding-top:150px;
+  padding-top:15rem;
   &:before {
     position:absolute;
-    top:50px;
+    top:5rem;
     right:0;
-    width:427px;
-    height:408px;
-    background:url(../../assets/images/img_ceo.png) no-repeat;
+    width:42.7rem;
+    height:40.8rem;
+    background:url(/assets/images/about/img_ceo.png) no-repeat;
     content:'';
   }
   &__title {
     display:block;
-    font-size:50px;
+    font-size:5rem;
   }
   &__name {
     display:block;
-    margin-top:50px;
-    font-size:20px;
+    margin-top:5rem;
+    font-size:2rem;
   }
   &__desc {
-    margin-top:200px;
-    line-height:25px;
+    margin-top:20rem;
+    line-height:2.5rem;
   }
 }

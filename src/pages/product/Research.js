@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Slider from 'react-slick';
-import Content1 from './Content1';
-import Content2 from './Content2';
-import Content3 from './Content3';
-import Content4 from './Content4';
-import Content5 from './Content5';
-import Content6 from './Content6';
-import Content7 from './Content7';
+import ContCDMO from './ContCDMO';
+import ContMRNA from './ContMRNA';
+import ContPEPTIDE from './ContPEPTIDE';
+import ContPEG from './ContPEG';
+import ContMEDICINE from './ContMEDICINE';
+import ContIMD from './ContIMD';
+import ContCEPA from './ContCEPA';
 import 'slick-carousel/slick/slick.css';
 import '../../assets/scss/components/layout/_slider.scss';
 import './Product.scss';
@@ -22,13 +22,13 @@ const Research = () => {
 
   const tabTitle = ['CDMO', 'mRNA', 'Peptide', 'PEG', '일반의약품', '개량신약', '세파'];
   const tab = {
-    0: <Content1 />,
-    1: <Content2 />,
-    2: <Content3 />,
-    3: <Content4 />,
-    4: <Content5 />,
-    5: <Content6 />,
-    6: <Content7 />,
+    0: <ContCDMO idx='research1' />,
+    1: <ContMRNA idx='research2'/>,
+    2: <ContPEPTIDE idx='research3' />,
+    3: <ContPEG idx='research4' />,
+    4: <ContMEDICINE idx='research5' />,
+    5: <ContIMD idx='research6' />,
+    6: <ContCEPA idx='research7' />,
   }
   const [activeTab, setActiveTab] = useState(0);
   const tabClickHandler = (idx) => {
@@ -43,13 +43,11 @@ const Research = () => {
       <Slider {...settings} className="com-slider">
        {tabTitle.map((title, idx) => {
           return (
-            <button type="button" className={`tab ${activeTab === idx ? 'active' : ''}`} onClick={()=>tabClickHandler(idx)} key={idx}>{title}</button>
+            <button type="button" className={`research-tab research-tab${idx} ${activeTab === idx ? 'active' : ''}`} onClick={()=>tabClickHandler(idx)} key={idx}>{title}</button>
           )
         })}
       </Slider>
-      <div>
-        {tab[activeTab]}
-      </div>
+      {tab[activeTab]}
     </section>
   )
 }

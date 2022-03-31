@@ -5,74 +5,74 @@
   background:$main-color;
   .inner {
     position:relative;
-    max-width:1200px;
+    max-width:120rem;
     margin:0 auto;
   }
   &__link {
-    border-bottom:1px solid #1d1e28;
+    border-bottom:.1rem solid #1d1e28;
     >a {
       display:inline-block;
-      margin-right:50px;
+      margin-right:5rem;
       color:#fff;
-      line-height:76px;
+      line-height:7.6rem;
     }
   }
   &__info {
-    padding:40px 0;
-    border-top:1px solid #454755;
+    padding:4rem 0;
+    border-top:.1rem solid #454755;
     >* {
       color:rgba(255,255,255,.2);
     }
     img {
       display:block;
-      margin-bottom:40px;
+      margin-bottom:4rem;
     }
   }
   &__link-contact {
     position:absolute;
-    top:138px;
-    right:20px;
-    width:260px;
-    padding:0 20px;
+    top:13.8rem;
+    right:2rem;
+    width:26rem;
+    padding:0 2rem;
     box-sizing:border-box;
     color:#fff;
-    line-height:40px;
+    line-height:4rem;
     &:after {
       position:absolute;
       top:50%;
-      right:20px;
-      width:8px;
-      height:8px;
-      margin-top:-4px;
-      border-top:1px solid #fff;
-      border-right:1px solid #fff;
+      right:2rem;
+      width:.8rem;
+      height:.8rem;
+      margin-top:-.4rem;
+      border-top:.1rem solid #fff;
+      border-right:.1rem solid #fff;
       transform:rotate(45deg);
       content:'';
     }
   }
   &__familysite {
     position:absolute;
-    top:16px;
-    right:20px;
-    width:260px;
-    line-height:50px;
+    top:1.6rem;
+    right:2rem;
+    width:26rem;
+    line-height:5rem;
     button {
       display:block;
       width:100%;
-      padding:0 20px;
+      padding:0 2rem;
       box-sizing:border-box;
       color:#fff;
-      line-height:50px;
+      line-height:5rem;
       text-align:left;
       &:after {
         position:absolute;
         top:50%;
-        right:20px;
-        width:8px;
-        height:8px;
-        margin-top:-4px;
-        border-top:1px solid #fff;
-        border-right:1px solid #fff;
+        right:2rem;
+        width:.8rem;
+        height:.8rem;
+        margin-top:-.4rem;
+        border-top:.1rem solid #fff;
+        border-right:.1rem solid #fff;
         transform:rotate(-45deg);
         transition:transform .2s cubic-bezier(0.215, 0.610, 0.355, 1);
         content:'';
@@ -81,16 +81,16 @@
     nav {
       display:none;
       position:absolute;
-      bottom:50px;
+      bottom:5rem;
       left:0;
       right:0;
       background-color:#fff;
-      border:1px solid $main-color;
+      border:.1rem solid $main-color;
       border-bottom:0;
       box-sizing:border-box;
       >a {
         display:block;
-        padding:0 20px;
+        padding:0 2rem;
         &:hover {
           background-color:$main-color;
           color:#fff;
@@ -98,13 +98,13 @@
       }
     }
     &.active button {
-      border:1px solid $main-color;
+      border:.1rem solid $main-color;
       border-top:0;
       background-color:#fff;
       color:$main-color;
       font-weight:700;
       &:after {
-        margin-top:-6px;
+        margin-top:-.6rem;
         border-color:$main-color;
         transform:rotate(135deg);
       }

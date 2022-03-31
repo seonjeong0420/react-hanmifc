@@ -3,27 +3,27 @@
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  margin-bottom:60px;
-  border-bottom:1px solid #222;
+  margin-bottom:6rem;
+  border-bottom:.1rem solid #222;
   box-sizing:border-box;
   .tab {
     display:flex;
     justify-content:center;
     align-items:center;
     position:relative;
-    flex-basis:280px;
-    font-size:16px;
-    line-height:80px;
+    flex-basis:2.8rem;
+    font-size:1.6rem;
+    line-height:8rem;
     &.active {
-      border:1px solid #222;
+      border:.1rem solid #222;
       border-bottom:0;
       font-weight:700;
       &:after {
         position:absolute;
-        bottom:-1px;
+        bottom:-.1rem;
         left:0;
         right:0;
-        height:1px;
+        height:.1rem;
         background-color:#fff;
         content:'';
       }

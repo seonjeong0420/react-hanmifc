@@ -21,7 +21,9 @@ const Navigation = () => {
         </div>
         <ul className="navbar__menu" onMouseEnter={mouseHover} onMouseLeave={mouseLeave}>
           {dummy.menus.map( (menu) => (
-            <li key={menu.id} className="navbar__item"><a href={menu.url} rel="noopenner noreferrer">{menu.type}</a></li>
+            <li key={menu.id} className="navbar__item">
+              <a href={menu.url} className={location.pathname===menu.url ? "active" : ""} rel="noopener noreferrer">{menu.type}</a>
+            </li>
           ))}
         </ul>
       </div>

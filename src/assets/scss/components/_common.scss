@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 .subsection {
-  max-width:1200px;
+  max-width:120rem;
   margin:0 auto;
-  padding:85px 40px;
+  padding:8.5rem 4rem;
   box-sizing:border-box;
   &__title {
-    margin-bottom:10px;
-    font-size:24px;
+    margin-bottom:1rem;
+    font-size:2.4rem;
   }
   &__desc {
-    margin-bottom:50px;
+    margin-bottom:5rem;
   }
 }
